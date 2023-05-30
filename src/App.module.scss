@@ -1,0 +1,21 @@
+@import "./styles/_commonColor.scss";
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 60px;
+  width: 100vw;
+  background-color: $black-800;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.workspaceDiv {
+  background-color: white;
+}

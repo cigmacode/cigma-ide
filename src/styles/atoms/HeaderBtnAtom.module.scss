@@ -1,0 +1,30 @@
+@import "../commonColor.scss";
+
+.iconBtn {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: $black-800;
+  border: none;
+  border-radius: 0;
+
+  &:hover {
+    background-color: $black-400;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+}
+
+.focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 5px solid $tertiary-400;
+  margin-bottom: -5px;
+}
+.notFocus {
+  outline: none;
+  box-shadow: none;
+}

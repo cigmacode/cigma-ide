@@ -1,0 +1,94 @@
+@use "../../styles/forwards" as *;
+
+.code-editor {
+  position: absolute;
+  background-color: white;
+}
+// 포커스 해제될 때 테두리 제거
+*:focus {
+  outline: none;
+}
+
+.code-editor-wrapper {
+  position: relative;
+  height: 100%;
+  min-width: 100px;
+}
+
+.bar {
+  height: 50px;
+  background-color: #3f474f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+// .hidden-bar {
+//   position: absolute;
+//   height: 30px;
+//   background-color: #d7b3ba;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+// }
+
+// .resizeButton {
+//   width: 10px;
+//   height: 100%;
+//   background-color: #aaa;
+//   cursor: ew-resize;
+// }
+
+.showButton {
+  // width: 20px;
+  // height: 20px;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  // margin: 1em;
+  color: white;
+}
+
+.commentButton {
+  // width: 20px;
+  // height: 20px;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  // margin: 1em;
+  color: white;
+}
+
+.closeButton {
+  // width: 20px;
+  // height: 20px;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  // margin: 1em;
+  color: white;
+}
+
+.comment {
+  top: 30px;
+  right: 0;
+  position: absolute;
+  background-color: beige;
+  width: 30%;
+}
+
+.monaco-editor {
+  top: 0;
+  position: absolute;
+  background-color: pink;
+  width: 100%;
+}
+
+.editorHeaderName {
+  font-weight: bold;
+  color: white;
+}

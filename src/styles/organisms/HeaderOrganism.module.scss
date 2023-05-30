@@ -1,0 +1,71 @@
+@import "../commonColor.scss";
+
+.logo {
+  margin: 0.5rem 1rem;
+}
+
+.headerLeftDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 6px 0;
+  margin-left: 10px;
+}
+
+.headerMiddleDiv {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.headerRightDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.shareBtn {
+  background-color: $primary-400;
+  border-radius: 15px;
+  padding: 5px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: $primary-200;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: $primary-300;
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.runIconBtn {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: $black-800;
+  border: none;
+  border-radius: 0;
+
+  &:hover {
+    background-color: $black-400;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+}

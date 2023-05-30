@@ -1,0 +1,102 @@
+@import "../commonColor";
+
+.app {
+  height: calc(100vh - 60px);
+  color: $primary-50;
+  overflow-y: overlay;
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 100%, 0.616);
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+.treeRoot {
+  position: relative;
+  margin: 0;
+  padding: 0 20px 0 20px;
+
+  li {
+    list-style-type: none;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.current {
+  background-color: $secondary-50;
+  margin: 8px;
+  padding: 8px;
+}
+
+.currentLabel {
+  font-weight: bold;
+  margin-inline-start: 0.5em;
+}
+
+.draggingSource {
+  opacity: 0.3;
+}
+
+.dropTarget {
+  border-radius: 5px;
+  background-color: $black-300;
+}
+
+.buttonWapper {
+  position: sticky;
+  top: 0;
+  display: flex;
+  padding: 5px 10px 5px 0;
+  gap: 10px;
+  justify-content: flex-end;
+  background-color: $black-600;
+  z-index: 0;
+  > div {
+    cursor: pointer;
+    &:hover {
+      color: $black-300;
+    }
+  }
+  box-shadow: 0px -3px 5px $black-800 inset;
+}
+
+.hidden {
+  opacity: 0;
+  width: 0 !important;
+  pointer-events: none;
+}
+
+.handle {
+  background-color: transparent;
+  &:active {
+    background-color: $tertiary-500; /* active 색상 */
+  }
+  z-index: 1;
+}
+
+.guideComment {
+  text-align: center;
+  animation: upload 0.3s ease-in;
+}
+
+// 업로드 문구 애니메이션
+@keyframes upload {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

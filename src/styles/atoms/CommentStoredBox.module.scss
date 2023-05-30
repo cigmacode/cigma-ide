@@ -1,0 +1,28 @@
+.comment-container {
+  display: flex;
+  background-color: white;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 15px;
+  flex-flow: column;
+}
+
+.user-div {
+  color: gray;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0.5em;
+}
+
+.text-div {
+  font-size: 1em;
+  color: black;
+  font-weight: 300;
+  margin: 0.5em 0.5em 1em 0.5em;
+}
+
+.time-div {
+  margin-left: 0.5em;
+  font-size: 0.5em;
+  font-weight: 300;
+}

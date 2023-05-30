@@ -1,0 +1,117 @@
+@import "../commonColor";
+@import "../colors";
+
+.root {
+  border-radius: 5px;
+  padding-left: 8px;
+  font-size: 12px;
+  position: relative;
+  align-items: center;
+  justify-items: start;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: min-content 1fr auto;
+  height: 32px;
+  padding-inline-end: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: $object-button-grey-bg;
+    .editButton {
+      display: flex;
+      &:hover {
+        color: $netural-200;
+      }
+    }
+  }
+  > div:first-child {
+    margin-left: 8px;
+  }
+}
+
+.root.isSelected {
+  background-color: $object-button-grey-bg;
+}
+
+.expandIconWrapper {
+  align-items: center;
+  font-size: 8px;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+  transition: transform linear 0.1s;
+  transform: rotate(90deg);
+}
+
+.expandIconWrapper.isOpen {
+  transform: rotate(180deg);
+}
+
+.iconWrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-left: 7px;
+  font-size: 16px;
+}
+.labelGridItem {
+  padding-inline-start: 8px;
+  width: 100%;
+}
+
+.pipeY {
+  position: absolute;
+  border-left: 2px solid #efefef;
+}
+
+.pipeX {
+  position: absolute;
+  left: 7px;
+  top: 16px;
+  height: 2px;
+  background-color: #efefef;
+}
+
+.nameSpace {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  align-items: center;
+  .editButton {
+    display: none;
+    margin-left: 10px;
+  }
+}
+
+.editWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+}
+
+.textField {
+  font-size: 12px;
+  padding: 1px 5px !important;
+  border: 0;
+  border-radius: 5px;
+}
+
+.editButton {
+  padding: 6px;
+}
+
+.editIcon {
+  font-size: 13px;
+}
+
+.nodeInput {
+  width: 100%;
+}

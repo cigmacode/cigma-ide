@@ -1,0 +1,24 @@
+.circle-image {
+  width: 35px; 
+  height: 35px; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  
+  img {
+   width: 100%; 
+   height: 100%;
+   object-fit: cover;
+  }
+}
+.image-name {
+  position: absolute; /* 절대 위치로 배치합니다 */
+  top: 10%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #ffffff; 
+  font-size: 14px; 
+  text-align: center; 
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 5px 10px;
+  border-radius: 4px; 
+}

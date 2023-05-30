@@ -1,0 +1,10 @@
+.hidden {
+  opacity: 0;
+  width: 0 !important;
+  pointer-events: none;
+}
+
+.xterm {
+  height: "100%";
+  overflow: hidden;
+}
